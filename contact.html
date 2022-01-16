@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tavonga Dorobeni Portfolio</title>
+    <title>TD | Fullstack Web-Developer | Graphic Designer</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,8 +44,8 @@
     <div class="container-fluid">
         <!-- box-header -->
         <header class="box-header">
-            <div class="box-logo">
-                <a href="index.html"><img src="img/Brand.png" width="150" alt="Logo"></a>
+            <div>
+                <a href="index.html"><img src="img/Brand.png" width="150" alt="Logo" style="margin-left: 10px"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -62,18 +62,18 @@
 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="education.html">education</a></li>
-                <li><a href="experience.html">experience</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="services.html">services</a></li>
                 <li><a href="contact.html">contact me</a> <i class="ion-ios-circle-filled color"></i></li>
 
 
 
                 <li class="box-label">Follow me</li>
 
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="https://www.facebook.com/tavonga.dorobeni/?viewas=100000686899395"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://join.skype.com/invite/DC9wmtFNCb8Z"><i class="ion-social-skype"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/tavonga-dorobeni"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://github.com/Tavonga-Dorobeni"><i class="ion-social-github"></i></a></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -89,23 +89,63 @@
 
     <!-- main-container -->
     <div class="container main-container">
-
-        <div style="text-align: center">
-            <h3 class="text-uppercase">contact me</h3>
-            <h5>You can get hold of me on the following platforms</h5>
-            <div class="contact-info">
-                <p><i class="ion-android-call"></i> 0772 689 810</p>
-                <p><i class="ion-ios-email"></i> tavonga.dorobeni@gmail.com</p>
-            </div>
-			
-			<div class="clearfix" style="text-align: center;">
-					<i class="ion-social-facebook size-50" style="margin-left: 20px; margin-right: 20px;"></i>
-					<i class="ion-social-instagram-outline size-50" style="margin-left: 20px; margin-right: 20px;"></i>
-					<i class="ion-social-twitter size-50" style="margin-left: 20px; margin-right: 20px;"></i>
-					<i class="ion-social-dribbble size-50" style="margin-left: 20px; margin-right: 20px;"></i>
+		<div style="margin-top: 30px">		   
+			<div style="text-align: left">
+				<div class="contact-form col-md-6">
+					<div id="form_status"></div>
+					<form type="POST" id="my-contact" onSubmit="return valid_datas( this );">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="input-contact">
+									<input placeholder="Name" type="text" name="name" id="name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-contact">
+									<input placeholder="Email" type="email" name="email" id="email">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-contact">
+									<input placeholder="Mobile (optional)" type="text" name="phone" id="phone">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-contact">
+									<input placeholder="Subject" type="text" name="object" id="subject">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="textarea-contact">
+									<textarea placeholder="Message" name="message" id="message"></textarea>
+									<input type="hidden" name="token" value="FsWga4&@f6aw" />
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input class="btn btn-box" type="submit" value="Submit">
+							</div>
+						</div>
+					</form>
+					
+					<div style="margin-top: 60px;">
+						<div class="contact-info">
+							<p><i class="ion-android-call"></i> 0772 689 810</p>
+							<p><i class="ion-ios-email"></i> tavonga.dorobeni@gmail.com</p>
+						</div>
+					</div>
+											
+					<ul class="social-ul">
+						<li class="box-social"><a href="https://www.facebook.com/tavonga.dorobeni/?viewas=100000686899395"><i class="ion-social-facebook"></i></a></li>
+						<li class="box-social"><a href="https://join.skype.com/invite/DC9wmtFNCb8Z"><i class="ion-social-skype"></i></a></li>
+						<li class="box-social"><a href="https://www.linkedin.com/in/tavonga-dorobeni"><i class="ion-social-linkedin"></i></a></li>
+						<li class="box-social"><a href="https://github.com/Tavonga-Dorobeni"><i class="ion-social-github"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.190762348352!2d31.06188471488333!3d-17.876531487787172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74e49308eac4b39e!2sOptasia%20Business%20Consultancy!5e0!3m2!1sen!2szw!4v1642283821940!5m2!1sen!2szw" width="620" height="580" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
 			</div>
         </div>
-
 
     </div>
     <!-- end main-container -->
@@ -135,6 +175,9 @@
 
     <!--  custom script -->
     <script src="js/custom.js"></script>
+	
+	<!-- form validation js -->
+	<script src="js/form-validate.js"></script>
 
 </body>
 

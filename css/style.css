@@ -422,7 +422,7 @@ h5 {
 ==================================================*/
 
 .box-intro {
-    text-align: center;
+    text-align: left;
     display: table;
     height: 100vh;
     width: 100%;
@@ -528,7 +528,7 @@ b i:last-child {
 /* text rotate */
 
 .box-headline {
-    font-size: 130px;
+    font-size: 80px;
     line-height: 1.0;
 }
 
@@ -890,12 +890,13 @@ footer img {
 
 .top-bar {
     color: #333;
-    padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+    padding: 150px 0 100px;
+    background: url(../img/flow.gif);
+    background: url(../img/flow.gif);
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: right top;
+	background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -903,7 +904,7 @@ footer img {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #999;
+    /* color: #999; */
     line-height: 50px;
 }
 
@@ -1025,6 +1026,19 @@ footer img {
     color: #9a9a9a;
 }
 
+.input-contact input[type="email"] {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 0 20px;
+    float: left;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
 .input-contact > span {
     position: absolute;
     top: 50%;
@@ -1071,7 +1085,7 @@ textarea:focus {
 }
 
 .contact-info p {
-    display: inline-block;
+    /* display: inline-block; */
     margin-right: 20px;
 }
 
@@ -1092,6 +1106,51 @@ textarea:focus {
     color: #fff;
 }
 
+/* form status
+==================================================*/
+
+#form_status span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  background: #E74C3C;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 0px;
+  border-radius: 3px;
+  margin-bottom: 18px;
+}
+
+#form_status span.loading {
+  color: #333;
+  background: #eee;
+  border-radius: 3px;
+  padding: 18px 0px;
+}
+
+#form_status span.notice {
+  color: yellow;
+}
+
+#form_status .success {
+  color: #fff;
+  text-align: center;
+  background: #2ecc71;
+  border-radius: 3px;
+  padding: 30px 0px;
+}
+
+#form_status .success i {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 14px;
+}
+
+#form_status .success h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
 
 /* single project page
 ==================================================*/
