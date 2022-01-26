@@ -1169,6 +1169,15 @@ textarea:focus {
 /* Responsive media queries
 ==================================================*/
 
+@media (min-width: 991px) {
+	.box-intro{
+		background: url(../img/flow.gif)
+	}
+	.table-cell{
+		padding-left: 50px;
+	}
+}
+
 @media (max-width: 991px) {
     .portfolio .categories-grid span {
         margin-bottom: 0;
@@ -1184,12 +1193,36 @@ textarea:focus {
     .col-md-6 h3 {
         margin-top: 30px;
     }
+	.box-headline {
+        font-size: 60px;
+    }
+	.hello h1 {
+        font-size: 60px;
+    }
+	.box-intro{
+		background: url(../img/flow_up3.gif)
+	}
+	.top-bar{
+		background: url(../img/flow_up3.gif)
+	}
+	.profile{
+		display: none
+	}
 }
 
 @media only screen and (max-width: 670px) {
     .box-headline {
-        font-size: 100px;
+        font-size: 50px;
     }
+	.hello h1 {
+        font-size: 50px;
+    }
+	.box-intro{
+		background: url(../img/flow_up2.gif)
+	}
+	.top-bar{
+		background: url(../img/flow_up2.gif)
+	}
     .box-intro h5 {
         font-size: 12px;
     }
@@ -1214,10 +1247,19 @@ textarea:focus {
 
 @media only screen and (max-width: 520px) {
     .box-headline {
-        font-size: 80px;
+        font-size: 40px;
     }
+	.box-intro{
+		background: url(../img/flow_up1.gif)
+	}
+	.top-bar{
+		background: url(../img/flow_up1.gif)
+	}
     .box-intro h5 {
         font-size: 12px;
+    }
+	.hello h1 {
+        font-size: 40px;
     }
     .main-container {
         padding: 50px 0;
@@ -1226,7 +1268,7 @@ textarea:focus {
 
 @media only screen and (max-width: 420px) {
     .box-headline {
-        font-size: 50px;
+        font-size: 40px;
     }
     .box-intro h5 {
         font-size: 12px;
