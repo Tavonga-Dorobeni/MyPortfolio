@@ -97,27 +97,27 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="input-contact">
-									<input placeholder="Name" type="text" name="name" id="name">
+									<input placeholder="Name" type="text" name="name" v-model="name" id="name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="input-contact">
-									<input placeholder="Email" type="email" name="email" id="email">
+									<input placeholder="Email" type="email" name="email" v-model="email" id="email">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="input-contact">
-									<input placeholder="Mobile (optional)" type="text" name="phone" id="phone">
+									<input placeholder="Mobile (optional)" type="text" name="phone" v-model="phone" id="phone">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="input-contact">
-									<input placeholder="Subject" type="text" name="object" id="subject">
+									<input placeholder="Subject" type="text" name="subject" v-model="subject" id="subject">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="textarea-contact">
-									<textarea placeholder="Message" name="message" id="message"></textarea>
+									<textarea placeholder="Message" name="message" v-model="message" id="message"></textarea>
 									<input type="hidden" name="token" value="FsWga4&@f6aw" />
 								</div>
 							</div>
@@ -178,6 +178,28 @@
 	
 	<!-- form validation js -->
 	<script src="js/form-validate.js"></script>
+	<script src="https://unpkg.com/vue@3"></script>
+	<script>
+		const vm = new Vue({
+			el: '#app',
+			data(){
+				return{
+					name: "",
+					email: "",
+					phone: "",
+					subject: "",
+					message: ""
+				}
+			},
+			
+			methods: {
+				Submit(){
+					this.message = "Message has been sent niqqa!!!"
+				}
+			}
+		})
+		.mount('#my-contact')
+	</script>
 
 </body>
 
